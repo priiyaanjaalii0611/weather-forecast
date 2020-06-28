@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ForecastFragment">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:id="@+id/main_info"
+       android:gravity="center_horizontal"
+       android:layout_centerHorizontal="true">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="WEATHER FORECAST 5 DAYS"
+         android:textSize="26sp"
+         android:textColor="@android:color/holo_purple"
+         android:textStyle="bold"/>
+      <TextView
+          android:id="@+id/city_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="DELHI"
+          android:textSize="30sp"
+
+          android:textColor="@color/colorPrimary"
+          android:textStyle="bold"/>
+
+      <TextView
+          android:id="@+id/geo_coords_value"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="[35 42]"
+          android:textSize="20sp"
+
+          android:textColor="@color/colorPrimary"
+          android:textStyle="bold"/>
+
+   </LinearLayout>
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:id="@+id/recycler_forecast"
+      android:layout_below="@+id/main_info"
+      android:layout_marginTop="20dp">
+      
+   </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
